@@ -329,7 +329,7 @@ const CandyMachine = ({ walletAddress }) => {
     setIsLoadingMints(true);
 
     const data = await fetchHashTable(
-      process.env.REACT_APP_CANDY_MACHINE_ID,
+      "ES6qgdViT2uiaPWdpfVF5Vq3TEgZBXHzLeo83u1mcQrw",
       true
     );
 
@@ -368,6 +368,19 @@ const CandyMachine = ({ walletAddress }) => {
     return <p>{`Drop Date: ${machineStats.goLiveDateTimeString}`}</p>;
   };
 
+  const renderMintedItems = () => (
+    <div className="gif-container">
+      <p className="sub-text">Minted Items ✨</p>
+      <div className="gif-grid">
+        {mints.map((mint) => (
+          <div className="gif-item" key={mint}>
+            <img src={mint} alt={`Minted NFT ${mint}`} />
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+
   return (
     machineStats && (
       <div className="machine-container">
@@ -385,7 +398,7 @@ const CandyMachine = ({ walletAddress }) => {
               Mint NFT
             </button>
           )}
-        {mints.length > 0}
+        {mints.length > 0 && renderMintedItems()}
         {isLoadingMints && <p>LOADING MINTS...</p>}
       </div>
     )
