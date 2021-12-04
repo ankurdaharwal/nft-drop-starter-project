@@ -1,0 +1,19 @@
+{
+    "name": "Orvar",
+    "symbol": "",
+    "image": "4.png",
+    "properties": {
+      "files": [
+        {
+          "uri": "4.png",
+          "type": "image/png"
+        }
+      ],
+      "creators": [
+        {
+          "address": "BcgoxQ96L7JgyLVCvb1q1s6HQn1an3iytosiaSjV9cyJ",
+          "share": 100
+        }
+      ]
+    }
+  }

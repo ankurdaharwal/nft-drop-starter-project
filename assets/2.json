@@ -1,0 +1,19 @@
+{
+    "name": "Ragnar",
+    "symbol": "",
+    "image": "2.png",
+    "properties": {
+      "files": [
+        {
+          "uri": "2.png",
+          "type": "image/png"
+        }
+      ],
+      "creators": [
+        {
+          "address": "BcgoxQ96L7JgyLVCvb1q1s6HQn1an3iytosiaSjV9cyJ",
+          "share": 100
+        }
+      ]
+    }
+  }
